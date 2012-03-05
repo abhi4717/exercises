@@ -95,7 +95,7 @@ border-radius: 0px;
 
 .relativeImage
 {
-position: absolute;
+position: relative;
 top: 0px;
 left: -150px;
 
