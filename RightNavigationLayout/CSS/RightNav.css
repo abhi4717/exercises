@@ -62,7 +62,7 @@ margin: 10px 10px 0px 10px;
 min-height: 105px;
 }
 
-.leftMenu
+.menu
 {
 position:absolute;
 right: 0%;
@@ -73,7 +73,7 @@ border-style: dotted;
 border-width: 0px 0px 0px 1px;
 }
 
-.rightBody
+.bodyContent
 {
 position:relative;
 float:left;
