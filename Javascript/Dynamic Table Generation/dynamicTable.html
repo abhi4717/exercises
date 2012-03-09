@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>Colour table</title>
+	<script language="javascript" type="text/javascript">
+		function addTableRows(){
+			var tab = document.getElementById('colourTable');
+			var red = 255;
+			var blue = 0;
+			var green = 0;
+			for(red =0; red<256;red++){
+				for(blue=0;blue<256;blue++){
+					for(green=0;green<256;green++){
+						var tabRow = document.createElement('tr');
+						var tabCol1 = document.createElement('td');
+						tabCol1.style.backgroundColor = 'rgb('+red+','+green+','+blue+')';
+						tabCol1.style.width = '40%';
+
+
+						var tabCol2 = document.createElement('td');
+						var colourName = document.createTextNode(tabCol1.style.backgroundColor);
+
+						tabCol2.appendChild(colourName);
+						tabRow.appendChild(tabCol1);
+						tabRow.appendChild(tabCol2);
+						tab.appendChild(tabRow);
+					}
+				}
+			}
+		}
+		
+	</script>	
+
+</head>
+<body onLoad="addTableRows();">
+	<table id="colourTable" border="1" cellspacing="1px" cellpadding="2px">
+	</table>
+	
+</body>
+</html>
