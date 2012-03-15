@@ -1,0 +1,52 @@
+<! -- Exercise 1
+Get, Set & Change Content - html, text
+Add, change attributes (class etc) - addClass, removeClass, attr etc.
+Inserting Content, Append, Prepend to elements, Insert elements After, before ,Wrap around elements
+Clone elements
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Document</title>
+	<!-- Include style sheet -->
+	<link rel="stylesheet" type="text/css" href="CSS/style.css" />
+	<!-- Include JQuery Library -->	
+	<script src="Javascript/jquery-1.7.1.min.js"> </script>
+	<!-- Incluide script file -->
+	<script src="Javascript/script.js"> </script>
+	
+</head>
+<body>
+	<ul id="list1">
+		<li class="a">item 1</li>
+		<li class="a">item 2</li>
+		<li class="b">item 3</li>
+		<li class="b">item 4</li>
+	</ul>
+	<p class="a">This is paragraph 1</p>
+	<p>This is paragraph 2</p>
+	<p class="b">This is paragraph 3</p>
+	<p>This is paragraph 4</p>
+
+	<div>
+		<input type="button" Id="btnGetContent" value="Get text of first paragraph element" />
+		<input type="button" Id="btnSetContent" value="Set text of last paragraph element" />
+		<input type="button" Id="btnChangeContent" value="Replace 'is' with 'was' in first paragraph elements" />
+	</div>
+	<div>
+		<input type="button" id="btnAddClass" value="Add class to last paragraph" />
+		<input type="button" id="btnRemoveClass" value="Remove class to last paragraph" />
+		<input type="button" Id="btnToggleClass" value="Toggle Classes" />
+		<input type="button" Id="btnAttribute" value="Get Id of ul" />
+	</div>
+	<div>
+		<input type="button" id="btnAppend" value="Append new item" />
+		<input type="button" id="btnPrepend" value="Prepend new item" />
+		<input type="button" Id="btnInsertAfter" value="Insert after odd item" />
+		<input type="button" Id="btnInsertBefore" value="Insert before even item" />
+		<input type="button" Id="btnWrap" value="Wrap all buttons" />
+	</div>
+	<div id="divClone">
+		<input type="button" id="btnClone" value="Clone all paragraph elements" />
+	</div>
+</body>
+</html>
