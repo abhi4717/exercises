@@ -1,0 +1,52 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Document</title>
+	<link rel="stylesheet" href="CSS/style.css" type="text/CSS"/>
+	<script src="Javascript/jquery-1.7.1.min.js">
+	</script>
+	<!-- Add JQuery here -->
+	<script type="text/javascript" src="Javascript/script.js">
+	</script>
+	<style type="text/css">
+	.a { color: Navy; }
+	.b { color: Maroon; }
+	</style>
+</head>
+<body>
+	<ul id="list1">
+		<li class="a">item 1</li>
+		<li class="a">item 2</li>
+		<li class="b">item 3</li>
+		<li class="b">item 4</li>
+	</ul>
+	<p class="a">This is paragraph 1</p>
+	<p>This is paragraph 2</p>
+	<p class="b">This is paragraph 3</p>
+	<p>This is paragraph 4</p>
+	<div id="Selector1">
+		<!-- Add multiple buttons for each selector -->
+		<input type="button" id="button1" value="Select All Ps" class="selectElements"/>
+		<!--<br />-->
+		<input type="button" id="btnSelectAll" value="Select All Elements" class="selectElements"/>
+		<!--<br />-->
+		<input type="button" id="btnSelectElementType" value="Select all list elements" class="selectElements"/>
+		<!--<br />-->
+		<input type="button" id="btnSelectClass" value="Select elements with class a" class="selectElements"/>
+	</div>
+	<div class="emptyDiv"></div>
+	<div id="Selector2">
+		<input type="button" id="btnSelectAttribute" value="Select elements with attribute class=b" class="selectElements" />
+	</div>
+	<div class="emptyDiv"></div>
+	<div id="selectorList">
+		<input type="button" id="btnSelectFirst" value="Select first element in list" class="selectElements" />
+		<input type="button" id="btnSelectLast" value="Select Last element in list" class="selectElements" />				  			<input type="button" id="btnSelectOdd" value="Select Odd elements in list" class="selectElements" />
+		<input type="button" id="btnSelectEven" value="Select Even elements in list" class="selectElements" />
+	</div>
+	<div class="emptyDiv"></div>
+	<div id="selectorEmpyt">
+		<input type="button" id="btnSelectContains" value="Select elements containing 'list'" class="selectElements" />
+		<input type="button" id="btnSelectEmpty" value="Select empty elements" class="selectElements" />
+	</div>
+</body>
+</html>

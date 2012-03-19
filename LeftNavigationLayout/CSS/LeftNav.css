@@ -1,0 +1,123 @@
+/* Tags	*/
+*
+{
+margin: 0px;
+padding: 0px;
+}
+
+body
+{
+width: 960px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 10px;
+margin-bottom: 10px;
+background-image: -moz-linear-gradient(to right, green,lightgreen,green);
+background-repeat: no-repeat;
+}
+
+ul
+{
+list-style-type:none;
+}
+li a
+{
+padding: 5px;
+font-size: 20px;
+text-decoration: none;
+display: block;
+border-style: dotted;
+border-width: 0px 0px 1px 0px;
+color: black;
+height: 35px;
+}
+
+li a:hover
+{
+color:white;
+background-color: #B0B0B0;
+border-style:solid;
+border-width: 1px;
+}
+li a:active
+{
+background-color: gray;
+}
+
+/* Classes */
+.wrapper
+{
+width:960px;
+margin:left auto;
+background-color:white;
+margin-top:0;
+padding:2px;
+}
+
+.banner
+{
+height:100px;
+margin: 10px 10px 0px 10px;
+}
+
+.leftMenu
+{
+height: 100%;
+width:150px;
+float:left;
+border-style: dotted;
+border-width: 0px 1px 0px 0px;
+}
+
+.rightBody
+{
+float:right;
+width:763px;
+padding: 10px;
+}
+
+.footer
+{
+text-align: center;
+padding: 10px;
+height: 10%;
+clear:both;
+background-color:#e0e0e0;
+border-width: 0px;
+margin: 0px 10px 10px 10px;
+min-height: 40px;
+}
+
+.logo
+{
+float: left;
+border-style: solid;
+border-width: 1px;
+background-image:URL('../Images/save-nature-thumb143x100.jpg');
+width:143px;
+height:100px;
+}
+.header
+{
+float: right;
+font-size: 40px;
+margin: 10px;
+padding: 5px;
+width: 740px;
+}
+.body
+{
+height: 100%;
+border-style: solid;
+border-width: 2px 0px 2px 0px;
+margin: 10px 10px 0px 10px;
+min-height: 350px;
+}
+
+#bHeader
+{
+color: white;
+font-weight: bold;
+font-size: 60px;
+background-color:#C85A17;
+}

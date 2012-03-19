@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>Number Divisible by 2 and 3</title>
+		<script type="text/javascript">
+			function displayNumbers(){
+				console.log('Using For loop to generate results');
+				for(var i=0; ++i<=100;){
+					if(i%2===0 && i%3===0){
+						console.log(i);
+					}
+				}
+				console.log('Using While loop to generate results');
+				var j=0;				
+				while(++j<=100){
+					if(j%2===0 && j%3===0){
+						console.log(j);
+					}
+				}
+			}
+		</script>
+	</head>
+	<body onLoad="displayNumbers()">
+	</body>
+</html>
