@@ -1,0 +1,82 @@
+*
+{
+margin: 0px;
+padding: 0px;
+}
+
+body
+{
+background-color: #C8BBBE;
+}
+
+ol
+{
+list-style-type: none;
+}
+
+li
+{
+margin-left: 50px;
+}
+
+div
+{
+margin: 5px;
+padding: 10px;
+border-radius: 10px;
+}
+
+#wrapper
+{
+width: 70%;
+margin: 10px auto;
+background-color: #FFFFFF;
+border-width: 1px;
+}
+
+#toDoList
+{
+border: 1px solid black;
+clear: both;
+background-color: #FFFFEF;
+overflow: hidden;
+}
+
+#inputNewItem
+{
+border: 1px solid black;
+}
+
+div div #header
+{
+float: right;
+}
+
+div div #inputNewItem
+{
+clear: both;
+}
+.headContainer{
+float: left;
+width: 66%;
+border: 1px solid black;
+}
+
+.accessoryContainer{
+float: right;
+width: 25%;
+border: 1px solid black;
+}
+
+.logo{
+background-image: URL('../Images/to do.jpg');
+background-repeat: no-repeat;
+float:left;
+width: 181px;
+height: 160px;
+}
+
+.inputTextBox
+{
+width: 70%;
+}
