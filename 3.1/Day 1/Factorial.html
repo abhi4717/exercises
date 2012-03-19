@@ -1,0 +1,18 @@
+<html>
+<head>
+	<title>Factorial of a number</title>
+	<script type="text/javascript">
+		function fact(num){
+			if(num===1 || num===0){
+				return 1;
+			}
+			else{
+				return num*fact(num-1);
+			}
+
+		}
+	</script>
+</head>
+<body onLoad="var num = 10; console.log('Factorial of '+num+' = '+fact(num))">
+</body>
+</html>
