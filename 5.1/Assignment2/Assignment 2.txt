@@ -1,0 +1,51 @@
+#1) Barplot of the number of India wins in games against Pak year-over-year
+
+
+odi <- data.frame(read.csv("/home/home/Desktop/ODI.txt", header = TRUE, sep=";", strip.white=TRUE))
+
+
+odiIndPakWin=odi[odi$Winner=="India" & ((odi$Team1=="India" & odi$Team2=="Pakistan") | (odi$Team1=="Pakistan" & odi$Team2=="India")),c("Matchyear")]
+
+
+odiIndPakAgg <- aggregate(odiIndPakWin,list(odiIndPakWin),length)
+
+
+x<-odiIndPakAgg[,1]
+
+y<-odiIndPakAgg[,2]
+
+
+barplot(y, col="brown", names.arg=x)
+
+
+
+
+#2) Barplot of India's % wins in each ground_country
+
+odiIndGroundsWin <- odi[odi$Winner=="India",c("Ground_Country")]
+
+odiIndGroundsAgg <- aggregate(odiIndGroundsWin,list(odiIndGroundsWin),length)
+
+odiIndGroundsPlayed <- odi[odi$Team1=="India"|odi$Team2=="India",c("Ground_Country")]
+
+odiIndGroundsPlayedAgg <- aggregate(odiIndGroundsPlayed,list(odiIndGroundsPlayed),length)
+
+odiIndPlayedAgg <- merge(odiIndGroundsAgg, odiIndGroundsPlayedAgg,by="Group.1",all.x=TRUE)
+
+odiIndPlayedAgg<-cbind(odiIndPlayedAgg,odiIndPlayedAgg[,2]/odiIndPlayedAgg[,3]*100)
+
+x<-odiIndPlayedAgg[,1]
+
+y<-odiIndPlayedAgg[,4]
+
+barplot(y,col="blue",names.arg=x)
+
+
+
+#3) Barplot of Top 10 grounds with most number of matches
+
+odiGround <- aggregate(odi$Ground,list(odi$Ground),length)
+
+odi10GroundsAgg <- head(odiGround[order(odiGround[,2],decreasing=TRUE),],10)
+
+barplot(odi10GroundsAgg[,2],col="grey",names.arg=odi10GroundsAgg[,1])
