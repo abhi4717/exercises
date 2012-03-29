@@ -1,0 +1,24 @@
+*{
+margin: 0px;
+padding: 0px;
+}
+
+#content{
+	width: 70%;
+	border: 1px black solid;
+	margin: 10px auto;
+}
+
+div{
+	border: 1px black solid;
+	margin: 5px;
+	padding: 5px;
+}
+
+.validationError{
+	color: red;
+}
+
+#newsLetter{
+	display: none;
+}

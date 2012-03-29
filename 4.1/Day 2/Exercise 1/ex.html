@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>Registration Form</title>
+	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="Javascript/script.js"></script>
+	<script type="text/javascript" src="http://jzaefferer.github.com/jquery-validation/jquery.validate.js"></script>
+	<link rel="stylesheet" type="text/stylesheet" href="CSS/style.css" />
+</head>
+<body>
+<form>
+	<div id="content">
+		<div>
+		<label>Firstname</label>
+		<input type="Text" id="txtFirstName" name="txtFirstName"/>
+		</div>
+		<div>
+		<label>Lastname</label>
+		<input type="Text" id="txtLastName" name="txtLastName"/>
+		</div>
+		<div>
+		<label>Username</label>
+		<input type="Text" id="txtUserName" name="txtUserName"/>
+		</div>
+		<div>
+		<label>Password</label>
+		<input type="Password" id="txtPassword" name="txtPassword"/>
+		</div>
+		<div>
+		<label>Confirm Password</label>
+		<input type="Password" id="txtCPassword" name="txtCPassword"/>
+		</div>
+		<div>
+		<label>Email</label>
+		<input type="text" id="txtEmail" name="txtEmail" />
+		</div>
+		<div>
+		<label>Please agree to our policy</label>
+		<input type="checkbox" id="chkPolicy" name="chkPolicy" />
+		</div>
+		<div>l
+		<label>I'd like to receive the newsletter</label>
+		<input type="checkbox" id="chkNewsLetter" name="chkNewsLetter" />
+		</div>
+		<div id="newsLetter">
+		<label>Topics(select at least two)</label>
+		<br />
+		<input type="checkbox" name="topic"/><label>Market Flash</label>
+		<input type="checkbox" name="topic"/><label>Latest fuzz</label>
+		<input type="checkbox" name="topic"/><label>Mailing list digester</label>
+		<label for="topic" generated="true" class="validationError" style="display: none; ">Please select atleast 2 topics</label>
+		</div>
+		<div>
+			<input type="submit" value="Submit" />
+		</div>
+	</div>
+</form>
+</body>
+</html>
