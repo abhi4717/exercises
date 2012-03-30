@@ -1,0 +1,45 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+/* ids */
+#content{
+	background-color: white;
+	padding:2px;
+	margin:10px auto;
+	width: 70%;
+	border-radius: 0px;
+	box-shadow: 5px 5px 5px black;
+}
+/* classes */
+.colorMeRed{
+	color: red;
+}
+
+.button{
+	display: block;
+	height: 30px;
+	font-size: 12px;
+	font-style: bold
+}
+
+/* elements */
+div{
+	padding:5px;
+	margin:5px;
+	border: 1px black solid;
+	border-radius: 5px;
+}
+input{
+	padding: 2px;
+	margin: 2px;
+}
+
+body{
+	background-color: #82CAFA;
+}
+textArea{
+	width:100%;
+}
+
