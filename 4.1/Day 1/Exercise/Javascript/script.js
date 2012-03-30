@@ -5,9 +5,11 @@ $("document").ready(function(){
 			url: "http://twitter.com/status/user_timeline/jquery.json",
 			dataType: "jsonp",
 			success: function(data){
+				var strAppendData = "";
 				for (var i=0;i<data.length;i++){
-					$("<li>"+data[i].text+"</li>").appendTo("#ulTweets").hide();
-				}						
+					strAppendData+="<li>"+data[i].text+"</li>";	
+				}
+				$(strAppendData).appendTo("#ulTweets").hide();						
 			}
 		});
 	});
